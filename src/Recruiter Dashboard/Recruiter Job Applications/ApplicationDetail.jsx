@@ -232,19 +232,7 @@ const ApplicationDetail = ({ isOpen, onClose, applicationId }) => {
 
               <hr className="border-gray-100 mx-4" />
 
-              {/* ── Private Note ── */}
-              {/* <div className="px-4 py-4">
-                <p className="text-[10px] font-semibold text-gray-400 uppercase tracking-widest mb-3">
-                  Private note
-                </p>
-                <textarea
-                  rows={3}
-                  value={note}
-                  onChange={e => setNote(e.target.value)}
-                  placeholder="Add internal note about this candidate..."
-                  className="w-full text-xs text-gray-700 placeholder-gray-300 border border-gray-200 rounded-xl px-3 py-2.5 resize-none outline-none focus:border-gray-400 transition-colors leading-relaxed"
-                />
-              </div> */}
+              
 
               {/* Bottom spacing */}
               <div className="h-4" />
@@ -288,6 +276,7 @@ const ApplicationDetail = ({ isOpen, onClose, applicationId }) => {
         isOpen={isScheduled}
         onClose={() => setIsScheduledOpen(false)}
         applicantName={applicationInfo?.fullName}
+        applicantMail={applicationInfo?.email}
       />
     </>
   )
