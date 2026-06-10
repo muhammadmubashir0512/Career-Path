@@ -1,3 +1,8 @@
+import { PdfIcon } from "./ApplicationData"
+import { XIcon } from "./ApplicationData"
+import { ZoomIcon } from "./ApplicationData"
+import { DownloadIcon } from "./ApplicationData"
+
 // Resume Modal Component
 export const ResumeModal = ({ isOpen, onClose, resumeName, resumeUrl }) => {
   if (!isOpen) return null
@@ -46,17 +51,16 @@ export const ResumeModal = ({ isOpen, onClose, resumeName, resumeUrl }) => {
           </div>
         </div>
 
-        {/* Modal body — PDF viewer ya placeholder */}
+        {/* Modal body */}
         <div className="flex-1 overflow-auto bg-gray-50">
           {resumeUrl ? (
-            // Firebase se URL aane ke baad yeh iframe kaam karega
             <iframe
               src={resumeUrl}
               className="w-full h-full min-h-[500px]"
               title={resumeName}
             />
           ) : (
-            // Placeholder — jab tak Firebase se URL nahi aata
+            // Placeholder
             <div className="flex flex-col items-center justify-center h-80 gap-4">
               <div className="w-20 h-20 bg-red-50 rounded-2xl flex items-center justify-center text-red-400">
                 <ZoomIcon />
@@ -64,7 +68,7 @@ export const ResumeModal = ({ isOpen, onClose, resumeName, resumeUrl }) => {
               <div className="text-center">
                 <p className="text-sm font-medium text-gray-700">{resumeName}</p>
                 <p className="text-xs text-gray-400 mt-1">
-                  Firebase se resume URL connect hone ke baad yahan preview dikhe ga
+                  
                 </p>
               </div>
               <div className="flex items-center gap-2 mt-2">

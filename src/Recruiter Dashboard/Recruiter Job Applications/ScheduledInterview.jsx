@@ -1,8 +1,16 @@
 import { PdfIcon } from "./ApplicationData"
 import { XIcon } from "./ApplicationData"
 
+import { useState } from "react"
+
 // ScheduleModal Component
 export const ScheduleModal = ({isOpen, applicantName, onClose}) =>{
+
+    const[interviewType, setInterviewType] = useState("OnSite");
+    const [interviewDate, setInterviewDate] = useState(null)
+    const [interviewTime, setInterviewTime] = useState(null)
+    const [interviewAddress, setInterviewAddress] = useState(null)
+
   if (!isOpen) {
     return null
   }
@@ -41,9 +49,19 @@ export const ScheduleModal = ({isOpen, applicantName, onClose}) =>{
           </div>
         </div>
 
-        {/* Modal body — PDF viewer ya placeholder */}
-        <div className="flex-1 overflow-auto bg-gray-50">
-          
+        {/* Modal body */}
+        <div className="flex-1 overflow-auto bg-gray-50 p-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+            {/* OnSite Data */}
+            <div onClick={()=>setInterviewType("OnSite")} className={`flex flex-col gap-2 border rounded-lg cursor-pointer p-2  ${interviewType === "OnSite" ? "bg-red-50 border-red-400" : "border-gray-200 bg-white hover:border-gray-300 "}`}>
+                <p className="text-[16px] font-semibold">Onsite Data</p>
+            </div>
+
+            {/* Google Meet Data */}
+            <div onClick={()=>setInterviewType("Meet")} className={`flex flex-col gap-2 border rounded-lg cursor-pointer p-2  ${interviewType === "Meet" ? "bg-red-50 border-red-400" : "border-gray-200 bg-white hover:border-gray-300 "}`}>
+                <p className="text-[16px] font-semibold">Google Meet Data</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

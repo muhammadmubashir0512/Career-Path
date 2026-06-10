@@ -9,7 +9,7 @@ import { ResumeModal } from './ResumeReview'
 import { ScheduleModal } from './ScheduledInterview'
 
 
-// Create Context for Status Updation
+// Context for Status Updation
 const StatusContext = createContext();
 
 const StatusProvider = ({children})=>{
@@ -233,7 +233,7 @@ const ApplicationDetail = ({ isOpen, onClose, applicationId }) => {
               <hr className="border-gray-100 mx-4" />
 
               {/* ── Private Note ── */}
-              <div className="px-4 py-4">
+              {/* <div className="px-4 py-4">
                 <p className="text-[10px] font-semibold text-gray-400 uppercase tracking-widest mb-3">
                   Private note
                 </p>
@@ -244,7 +244,7 @@ const ApplicationDetail = ({ isOpen, onClose, applicationId }) => {
                   placeholder="Add internal note about this candidate..."
                   className="w-full text-xs text-gray-700 placeholder-gray-300 border border-gray-200 rounded-xl px-3 py-2.5 resize-none outline-none focus:border-gray-400 transition-colors leading-relaxed"
                 />
-              </div>
+              </div> */}
 
               {/* Bottom spacing */}
               <div className="h-4" />
@@ -258,9 +258,9 @@ const ApplicationDetail = ({ isOpen, onClose, applicationId }) => {
 
         {/* ── Footer action buttons ── */}
         <div className="flex items-center gap-2 px-4 py-3 border-t border-gray-100 flex-shrink-0">
-          <a href={`mailto:${applicationInfo?.email}`}  className="flex-1 flex items-center justify-center gap-2 py-2.5 text-sm font-medium text-gray-600 border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors cursor-pointer">
+          {/* <a href={`mailto:${applicationInfo?.email}`}  className="flex-1 flex items-center justify-center gap-2 py-2.5 text-sm font-medium text-gray-600 border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors cursor-pointer">
             <MailIcon /> Send email
-          </a>
+          </a> */}
           <button
               onClick={()=> setIsScheduledOpen(true)}
               className={`flex-1 flex items-center justify-center gap-2 py-2.5 text-sm font-medium rounded-xl transition-all duration-200 cursor-pointer

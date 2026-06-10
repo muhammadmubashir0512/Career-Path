@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -66,3 +67,7 @@ Recruiters can post and manage jobs, review applications, and schedule interview
 
 ---
 >>>>>>> a95149ce06bcd7c298fc568f295be2f0f653a7b5
+=======
+# Career-Path
+CareerPath is a full-stack job portal built with React and Firebase, featuring three role-based dashboards for recruiters, candidates, and admins. Recruiters can post and manage jobs, review applications, and schedule interviews. Candidates can search jobs, apply with resumes, and track their application status in real time.
+>>>>>>> 3206e8a0bf895fc0bd2a353ab581b0c952dc5c9a
