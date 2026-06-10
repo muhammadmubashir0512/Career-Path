@@ -61,7 +61,6 @@ const navItems = [
   { label: 'My Jobs',      path: '/recruiter/jobs',       icon: Icons.jobs,         badge: null },
   { label: 'Post a Job',   path: '/recruiter/postjob',     icon: Icons.postJob,      badge: null },
   { label: 'Applications', path: '/recruiter/applications', icon: Icons.applications, badge: null },
-  { label: 'Messages',     path: '/recruiter/messages',     icon: Icons.messages,     badge: null },
   { label: 'Settings',     path: '/recruiter/settings',     icon: Icons.settings,     badge: null },
 ]
 

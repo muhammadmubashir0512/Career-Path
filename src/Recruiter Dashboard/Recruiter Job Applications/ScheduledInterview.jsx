@@ -90,10 +90,7 @@ Please join on time.`
                     : "bg-white border-gray-200 hover:border-gray-300"}`}
               >
                 <div className="flex items-center gap-2">
-                  <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-all
-                    ${interviewType === "OnSite" ? "border-red-400" : "border-gray-300"}`}>
-                    {interviewType === "OnSite" && <div className="w-2 h-2 rounded-full bg-red-400" />}
-                  </div>
+                  
                   <p className="text-sm font-semibold text-gray-900">Onsite Interview</p>
                 </div>
 
@@ -141,10 +138,7 @@ Please join on time.`
                     : "bg-white border-gray-200 hover:border-gray-300"}`}
               >
                 <div className="flex items-center gap-2">
-                  <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-all
-                    ${interviewType === "Meet" ? "border-red-400" : "border-gray-300"}`}>
-                    {interviewType === "Meet" && <div className="w-2 h-2 rounded-full bg-red-400" />}
-                  </div>
+                  
                   <p className="text-sm font-semibold text-gray-900">Google Meet</p>
                 </div>
 
