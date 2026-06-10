@@ -1,0 +1,42 @@
+{
+  "jobSeeker": {
+    "id": "job_seeker_001",
+    "title": "Job Seeker",
+    "subtitle": "I'm looking for a job",
+    "description": "Find your dream job from 50,000+ opportunities. Build your profile, upload your resume, and get matched with top companies hiring right now.",
+    "features": [
+      "Browse 50K+ job listings",
+      "AI-powered job matching",
+      "One-click apply",
+      "Track all applications"
+    ],
+    "buttonText": "Selected",
+    "isSelected": true,
+    "icon": "👨‍💻",
+    "colorTheme": {
+      "primary": "#E94560",
+      "secondary": "#BB1732",
+      "bg": "#FFE5E8"
+    }
+  },
+  "recruiter": {
+    "id": "recruiter_001",
+    "title": "Recruiter",
+    "subtitle": "I'm hiring talent",
+    "description": "Post jobs, discover the best candidates, and manage your entire hiring pipeline — all from one powerful, intuitive platform.",
+    "features": [
+      "Post unlimited jobs",
+      "AI candidate matching",
+      "Application tracking",
+      "Team collaboration"
+    ],
+    "buttonText": "Select",
+    "isSelected": false,
+    "icon": "👔",
+    "colorTheme": {
+      "primary": "#1A1A2E",
+      "secondary": "#16213E",
+      "bg": "#E8E8F0"
+    }
+  }
+}
