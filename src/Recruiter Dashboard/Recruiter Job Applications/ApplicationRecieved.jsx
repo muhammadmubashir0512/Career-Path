@@ -57,18 +57,18 @@ const ApplicationReceived = ({ onSelect }) => {
     const HiredLength = applicationsData.filter((app) => app.status === "Hired").length
 
     return (
-        <div className='min-h-screen bg-gray-50 mt-4 sm:mt-5 px-3 sm:px-4 md:px-0'>
+        <div className='min-h-screen bg-gray-50  pt-20 md:pt-5'>
             <Toaster position="top-right" />
 
-            {/* Heading - Mobile First */}
-            <div className="flex flex-col gap-1 mb-4 sm:mb-5">
-                <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">
-                    Applications
-                </h1>
-                <p className="text-xs sm:text-sm text-gray-400">
-                    Manage and review all received applications
-                </p>
-            </div>
+            {/* Header Section - Mobile First */}
+                <div className="mb-5 md:mb-6 lg:mb-8">
+                    <h1 className="text-2xl font-bold text-gray-900 sm:text-2xl md:text-3xl">
+                        Applications
+                    </h1>
+                    <p className="text-sm text-gray-500 mt-1 sm:text-base">
+                        Manage and reviewed all recieved Applications
+                    </p>
+                </div>
 
             {/* Stats Cards - Mobile: 2 columns, Tablet+: 4 columns */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 mb-4 sm:mb-5 md:mb-6">

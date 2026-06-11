@@ -16,12 +16,12 @@ import JobDetail from './Recruiter Dashboard/Recruiter Job Sections/JobDetails';
 import EditJobs from './Recruiter Dashboard/Recruiter Job Sections/EditJobs';
 import ProtectedRoute from './components/ProtecedRoutes';
 import Applications from './Recruiter Dashboard/Recruiter Job Applications/Applications';
+import Settings from './Recruiter Dashboard/Recruiter Settings/Settings';
 
 function App() {
   const [appLoading, setAppLoading] = useState(true);
 
   useEffect(() => {
-    // App load hone pe auth state check karo
     const unsubscribe = onAuthStateChanged(auth, () => {
       setAppLoading(false);
     });
@@ -116,6 +116,14 @@ function App() {
       element: (
         <ProtectedRoute>
           <Applications/>
+        </ProtectedRoute>
+      )
+    },
+    {
+      path: '/recruiter/settings',
+      element: (
+        <ProtectedRoute>
+          <Settings/>
         </ProtectedRoute>
       )
     }
