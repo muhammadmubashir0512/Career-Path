@@ -78,7 +78,7 @@ const AccountStatus = () => {
     return (
         <div className='min-h-screen bg-gradient-to-br from-gray-50 to-white'>
             <Toaster position="top-right" />
-            <div className="pt-20 md:pt-5 px-4 sm:px-5 md:px-6 lg:px-8">
+            <div className="pt-20 md:pt-5">
                 
                 {/* Header Section */}
                 <div className="mb-6 md:mb-8">

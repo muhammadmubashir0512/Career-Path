@@ -116,7 +116,7 @@ const Topbar = () => {
             </div>
 
             {/* Logo */}
-            <div className="flex items-center gap-2.5 px-2 pb-5 mb-2 border-b border-white/10">
+            <div className="flex items-center gap-2.5 px-2 pb-5 mb-2 border-b border-white/10" onClick={()=> navigate("/recruiter/dashboard")}>
               <div className="w-8 h-8 bg-[#E94560] rounded-lg flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
                   <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>

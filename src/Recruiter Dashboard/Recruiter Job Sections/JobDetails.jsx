@@ -101,7 +101,7 @@ const JobDetail = () => {
 
             {/* Main Content - Mobile First */}
             <div className='md:ml-[220px] pt-20 md:pt-5'>
-                <div className='max-w-5xl mx-auto px-4 py-4 md:py-8'>
+                <div className='max-w-8xl mx-auto px-4 py-4 md:py-8'>
                     
                     {/* Breadcrumb / Navigation */}
                     <div className='mb-4 md:mb-6'>

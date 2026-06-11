@@ -25,7 +25,6 @@ const Login = () => {
     // Email/Password Login
     const onSubmit = async (data) => {
         try {
-            // Login karo
             const userCredential = await signInWithEmailAndPassword(auth, data.Email, data.Password);
             const user = userCredential.user;
             
@@ -56,15 +55,14 @@ const Login = () => {
     // Google Login
     const SigninwithGoogle = async () => {
         try {
-            // 1. Google se login karo
             const userCredential = await signInWithPopup(auth, provider);
             const user = userCredential.user;
             
-            // 2. Firestore se user ka document lao
+
             const userDocRef = doc(db, "users", user.uid);
             const userDoc = await getDoc(userDocRef);
             
-            // 3. Role fetch karo
+
             let role = "candidate"; // default role
             
             if (userDoc.exists()) {
@@ -75,13 +73,15 @@ const Login = () => {
                 console.log("No user document found. New user?");
             }
             
-            // 4. Role ke hisaab se navigate karo
             if (role === "recruiter_001") {
                 navigate('/recruiter/dashboard');
                 toast.success("Welcome Recruiter!");
-            } else {
+            } else if(role === "job_seeker_001") {
                 navigate('/candidate/dashboard');
                 toast.success("Welcome Candidate!");
+            }else{
+                navigate('/signup')
+                toast.error("Create Account for login")
             }
             
         } catch (error) {

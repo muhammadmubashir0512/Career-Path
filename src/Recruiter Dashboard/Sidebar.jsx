@@ -97,7 +97,7 @@ const Sidebar = () => {
       <div className="flex flex-col h-screen w-[220px] bg-[#0f1729] fixed top-0 left-0 z-50 flex-shrink-0 py-5 px-3">
 
         {/* ── Logo ── */}
-        <div className="flex items-center gap-2.5 px-2 pb-5 mb-2 border-b border-white/10">
+        <div className="flex items-center gap-2.5 px-2 pb-5 mb-2 border-b border-white/10 cursor-pointer" onClick={()=> navigate("/recruiter/dashboard")}>
           <div className="w-8 h-8 bg-[#E94560] rounded-lg flex items-center justify-center flex-shrink-0">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
               fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
