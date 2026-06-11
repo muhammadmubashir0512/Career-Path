@@ -213,7 +213,7 @@ const ApplicationDetail = ({ isOpen, onClose, applicationId }) => {
           )}
         </div>
 
-        {/* Footer */}
+        {/* Interview Button */}
         <div className="flex items-center gap-2 px-4 py-3 border-t border-gray-100 flex-shrink-0">
           <button
             onClick={() => setIsScheduled(true)}

@@ -13,7 +13,7 @@ const Role = () => {
     const cards = [cardData.jobSeeker, cardData.recruiter]
     const navigate = useNavigate()
 
-    // Check authentication state on mount
+    // Check authentication state
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (!user) {
@@ -43,7 +43,7 @@ const Role = () => {
                 return
             }
             
-            // CHANGE 1: SelectedRole
+            // SelectedRole
             await setDoc(doc(db, "users", user.uid), {
                 Role: selectedRole,
                 updatedAt: new Date()
@@ -51,7 +51,7 @@ const Role = () => {
             
             console.log("Role saved:", selectedRole)
             
-            // CHANGE 2: Navigation condition
+            // Navigation condition
             if (selectedRole === "recruiter_001") {
                 navigate('/RecruiterProfile')
             } else if (selectedRole === "job_seeker_001") {
@@ -65,7 +65,7 @@ const Role = () => {
         }
     }
 
-    // Show loading while checking auth
+    // loading
     if (isCheckingAuth) {
         return (
             <div className='h-screen w-full flex items-center justify-center bg-gradient-to-br from-gray-50 to-white'>
@@ -149,7 +149,7 @@ const Role = () => {
                     ))}
                 </div>
                 
-                {/* ✅ CHANGE 3: Continue button text */}
+                {/* Continue button */}
                 {selectedRole && (
                     <div className="text-center mt-6">
                         <button 
