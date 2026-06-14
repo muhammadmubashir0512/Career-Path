@@ -144,9 +144,9 @@ const AccountStatus = () => {
                             <h3 className="text-sm font-semibold text-gray-800">Personal Profile</h3>
                         </div>
                         <div className="p-5">
-                            <p className="text-sm text-gray-500">Manage your account preferences and security settings.</p>
+                            <p className="text-sm text-gray-500">Manage your personal profile and security settings.</p>
                             <button 
-                                onClick={() => navigate('/recruiter/profilesettings')}
+                                onClick={() => navigate('/recruiter/personalprofile')}
                                 className="mt-3 text-sm text-[#E94560] hover:underline cursor-pointer"
                             >
                                 Edit Personal Profile
@@ -160,9 +160,9 @@ const AccountStatus = () => {
                             <h3 className="text-sm font-semibold text-gray-800">Company Profile</h3>
                         </div>
                         <div className="p-5">
-                            <p className="text-sm text-gray-500">Manage your email and notification preferences.</p>
+                            <p className="text-sm text-gray-500">Manage your company profile and security settings.</p>
                             <button 
-                                onClick={() => navigate('/recruiter/companysettings')}
+                                onClick={() => navigate('/recruiter/companyProfile')}
                                 className="mt-3 text-sm text-[#E94560] hover:underline cursor-pointer"
                             >
                                 Edit Company Profile

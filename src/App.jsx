@@ -17,6 +17,8 @@ import EditJobs from './Recruiter Dashboard/Recruiter Job Sections/EditJobs';
 import ProtectedRoute from './components/ProtecedRoutes';
 import Applications from './Recruiter Dashboard/Recruiter Job Applications/Applications';
 import Settings from './Recruiter Dashboard/Recruiter Settings/Settings';
+import personalprofile from './Recruiter Dashboard/Recruiter Settings/PersonalProfile';
+import CompanyProfile from './Recruiter Dashboard/Recruiter Settings/CompanyProfile';
 
 function App() {
   const [appLoading, setAppLoading] = useState(true);
@@ -124,6 +126,22 @@ function App() {
       element: (
         <ProtectedRoute>
           <Settings/>
+        </ProtectedRoute>
+      )
+    },
+    {
+      path: '/recruiter/personalprofile',
+      element: (
+        <ProtectedRoute>
+          <personalprofile/>
+        </ProtectedRoute>
+      )
+    },
+    {
+      path: '/recruiter/settings',
+      element: (
+        <ProtectedRoute>
+          <CompanyProfile/>
         </ProtectedRoute>
       )
     }
