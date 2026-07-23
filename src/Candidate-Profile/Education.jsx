@@ -174,10 +174,6 @@ const CandidateEducation = () => {
                             <p className='text-xs font-medium text-gray-500'>Resume & Links</p>
                         </div>
 
-                        <div className='flex flex-col gap-2 items-center relative z-10 bg-white px-2'>
-                            <div className='w-10 h-10 rounded-full bg-gray-100 text-gray-500 border-2 border-gray-300 flex items-center justify-center text-sm font-bold'>6</div>
-                            <p className='text-xs font-medium text-gray-500'>Job Preference</p>
-                        </div>
                     </div>
                 </div>
 
@@ -363,10 +359,10 @@ const CandidateEducation = () => {
                     </button>
 
                     {/* Action Buttons */}
-                    <div className='flex flex-row justify-between items-center pt-4'>
+                    <div className='flex flex-row justify-end items-center pt-4 gap-4'>
                         <button type="button" onClick={() => navigate('/candidate/dashboard')} className='text-[#E94560] hover:text-[#eb5b73] cursor-pointer font-medium px-5 py-3'>Skip for now</button>
-                        <button type="submit" disabled={isSubmitting}  className='px-5 bg-[#E94560] hover:bg-[#eb5b73] text-white cursor-pointer font-semibold py-3 rounded-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed'>
-                            {isSubmitting ? 'Saving...' : 'Continue'}
+                        <button type="submit" onClick={() => onSubmit()} disabled={isSubmitting || isUploading} className='px-5 bg-[#E94560] hover:bg-[#eb5b73] text-white cursor-pointer font-semibold py-3 rounded-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed'>
+                            {isSubmitting || isUploading ? 'Saving...' : 'Continue'}
                         </button>
                     </div>
                 </div>

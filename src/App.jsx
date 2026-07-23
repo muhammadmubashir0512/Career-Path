@@ -18,11 +18,14 @@ import ProtectedRoute from './components/ProtecedRoutes';
 import Applications from './Recruiter Dashboard/Recruiter Job Applications/Applications';
 import Settings from './Recruiter Dashboard/Recruiter Settings/Settings';
 import CompanyProfile from './Recruiter Dashboard/Recruiter Settings/CompanyProfile';
-import BasicInfo from './Candidate Profile/BasicInfo';
-import CandidateEducation from './Candidate Profile/Education';
-import CandidateExperience from './Candidate Profile/Experience';
-import CandidateSkills from './Candidate Profile/Skills';
-import CandidateResume from './Candidate Profile/ResumeLinks';
+import BasicInfo from './Candidate-Profile/BasicInfo';
+import CandidateEducation from './Candidate-Profile/Education';
+import CandidateExperience from './Candidate-Profile/Experience';
+import CandidateSkills from './Candidate-Profile/Skills';
+import CandidateResume from './Candidate-Profile/ResumeLinks';
+import CandidateDashboard from './Candidate Dashboard/Home-Sections/CandidateDashboard';
+import FindJobs from './Candidate Dashboard/Candidate-job-Sections/FindJobs';
+
 
 
 function App() {
@@ -103,6 +106,22 @@ function App() {
       element: (
         <ProtectedRoute>
           <RecRuiterDashboard />
+        </ProtectedRoute>
+      )
+    },
+    {
+      path: '/candidate/dashboard',
+      element: (
+        <ProtectedRoute>
+          <CandidateDashboard/>
+        </ProtectedRoute>
+      )
+    },
+    {
+      path: '/candidate/findjobs',
+      element: (
+        <ProtectedRoute>
+          <FindJobs/>
         </ProtectedRoute>
       )
     },

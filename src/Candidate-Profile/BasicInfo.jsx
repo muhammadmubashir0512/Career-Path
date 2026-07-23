@@ -153,10 +153,6 @@ const CandidateBasicInfo = () => {
                             <p className='text-xs font-medium text-gray-500'>Resume & Links</p>
                         </div>
 
-                        <div className='flex flex-col gap-2 items-center relative z-10 bg-white px-2'>
-                            <div className='w-10 h-10 rounded-full bg-gray-100 text-gray-500 border-2 border-gray-300 flex items-center justify-center text-sm font-bold'>6</div>
-                            <p className='text-xs font-medium text-gray-500'>Job Preference</p>
-                        </div>
                     </div>
                 </div>
 
